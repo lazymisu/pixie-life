@@ -2,9 +2,7 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::RenderWindow window(sf::VideoMode(1920, 1080), "Pixie Life 1.0.0", sf::Style::Close);
 
     while (window.isOpen())
     {
@@ -13,12 +11,18 @@ int main()
         {
             if (event.type == sf::Event::Closed)
                 window.close();
+
+            // handle input
         }
 
+        // update
+
         window.clear();
-        window.draw(shape);
+
+        // draw
+
         window.display();
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
