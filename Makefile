@@ -21,6 +21,3 @@ $(ODIR):
 
 clean:
 	rm -f $(ODIR)/*.o $(OUT)
-
-run:
-	$(OUT)
